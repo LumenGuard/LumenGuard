@@ -4,3 +4,16 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+
+[workspace]
+resolver = "2"
+
+members = [
+  "crates/api",
+  "crates/signer",
+  "crates/stellar-adapter",
+  "crates/policy-engine", "crates/audit",
+  "crates/audit", "crates/config",
+  "crates/config",
+  "crates/shared"
+]
